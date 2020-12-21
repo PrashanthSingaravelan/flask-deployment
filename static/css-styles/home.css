@@ -1,0 +1,29 @@
+div {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+h2.heady {
+	color: blue;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+
+p.authory {
+	color: red;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.contenty { 
+	color: magenta;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
