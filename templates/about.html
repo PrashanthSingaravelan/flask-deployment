@@ -1,25 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>About Page</title>
-</head>
+{% extends "base.html" %}
 
-<style> 
-.about_look {
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-	color: green;
-	margin:0px;
-}
+{% block title %}
+		<title>About Page</title>
+{% endblock title %}
 
-</style>
 
-<body>
+{% block content %}
+
 		<h1>About Page</h1>
 		<p class="about_look">This About page is created using render_template() </p>
-</body>
 
-</html>
+{% endblock content %}
+
 

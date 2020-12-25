@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, redirect
 app = Flask(__name__)
 
 list1 = [
@@ -26,8 +26,18 @@ def home():
 def about():
 	return render_template('about.html')
 
+# @app.route("/<name>")
+# def user(name):
+# 	return f"Hello {name} You are in {name}'s Page! Try again later"
+
+# @app.route("/admin")
+# def admin():
+# 	return redirect(url_for("user", name="Prashanth"))
+
 if __name__ == "__main__":
 	app.run(debug=True)
+
+
 
 
 

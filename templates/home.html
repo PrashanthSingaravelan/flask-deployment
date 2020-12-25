@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css-styles/home.css') }}">
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block title %}
+		<title>Home Page</title>
+{% endblock title %}
+
+{% block content %}
+
 		{% for i in posts %}
 		<div>
 			<h2 class="heady">{{ i.title }}</h2>
@@ -15,9 +14,4 @@
 		</div>
 		{% endfor %}
 
-</body>
-
-</html>
-
-
-
+{% endblock content %}
